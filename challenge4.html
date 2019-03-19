@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Challenge 5</title>
+    <style>
+    body{
+        margin: 2%;
+        border: 1px solid black;
+        background-color: #b3b3b3;
+    }
+    #image{
+        line-height:325px;
+        width: 388px;
+        height: 325px;
+        border:5px solid black;
+        margin:0 auto;
+        background-repeat: no-repeat;
+        color:#FFFFFF;
+        text-align: center;
+        background-color: #8e68ff;
+        background-size: 100%;
+        margin-bottom:25px;
+        font-size:150%;
+    }
+    .preview{
+        width:10%;
+        margin-left:17%;
+        border: 10px solid black;
+    }
+    img{
+        width:95%;
+    }
+    h1{
+        text-align: center;
+    }
+    </style>
+
+    <script>
+    // I used Two functions here.  Starter idea at:
+    // https://codepen.io/ColleenEMc/pen/XmZzWw
+
+    function upDate(previewPic){
+      console.log(previewPic)
+      document.querySelector("#image").innerHTML = previewPic.alt
+      document.querySelector("#image").style.backgroundImage = "url('"+previewPic.src+"')"
+     /*  Hover & tab
+     In this function you should
+        1) change the url for the background image of the div with the id = "image"
+        to the source file of the preview image
+
+        2) Change the text  of the div with the id = "image"
+        to the alt text of the preview image
+        */
+
+    	}
+
+    function unDo(){
+      console.log(image)
+      document.querySelector("#image").innerHTML = "Hover or tab over/into an image below."
+      document.querySelector("#image").style.backgroundImage = "url('')"
+      /* unhover & untab
+      In this function you should
+        1) Update the url for the background image of the div with the id = "image"
+        back to the orginal-image.  You can use the css code to see what that original URL was
+
+        2) Change the text  of the div with the id = "image"
+        back to the original text.  You can use the html code to see what that original text was
+        */
+
+    	}
+
+    </script>
+</head>
+
+<body>
+    <h1>Challenge 5</h1>
+        <div id = "image">
+            Hover or tab over/into an image below.
+        </div>
+
+        <!-- Your code goes in the img tag below.  Make sure to react to "hovering" and "tabbing": -->
+        <img class = "preview"
+          onmouseover = "upDate(this)"
+          onfocus = "upDate(this)"
+          onmouseleave = "unDo()"
+          onblur = "unDo()"
+          tabindex= "0"
+            alt = "Ocean waves"
+            src = "https://images.unsplash.com/photo-1497449711066-ecd7e3d6a484?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=802&q=80">
+            <!-- Vasconez, Jorge. “Foam, Water, Sea and Ocean HD Photo by Jorge Vasconez (@Jorgeluis) on Unsplash.” Beautiful Free Images & Pictures, 14 June 2017, unsplash.com/photos/f5sog5ia-rU. -->
+
+        <!-- Your code goes in the img tag below.  Make sure to react to "hovering" and "tabbing": -->
+        <img class = "preview"
+          onmouseover = "upDate(this)"
+          onfocus = "upDate(this)"
+          onmouseleave = "unDo()"
+          onblur = "unDo()"
+          tabindex= "0"
+            alt = "Acrylic paint"
+            src = "https://images.unsplash.com/photo-1550353185-761a5da3ee96?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80">
+            <!-- Czerwiński, Paweł. “Acrylic Paint Immitating Flowers Photo by Paweł Czerwiński (@pawel_czerwinski) on Unsplash.” Beautiful Free Images & Pictures, Unsplash, 16 Feb. 2019, unsplash.com/photos/l8DUam8vtbc.-->
+
+        <!-- Your code goes in the img tag below.  Make sure to react to "hovering" and "tabbing": -->
+        <img class = "preview" tabindex = "1"
+          onmouseover = "upDate(this)"
+          onfocus = "upDate(this)"
+          onmouseleave = "unDo()"
+          onblur = "unDo()"
+          tabindex= "0"
+            src = "https://images.unsplash.com/photo-1549778578-430925ab8c23?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=564&q=80"
+            alt = "rusty woods">
+            <!-- Bovkun, Max. “Rug, Lumber, Pattern and Wooden HD Photo by Max Bovkun (@Maximbovkun) on Unsplash.” Beautiful Free Images & Pictures, Unsplash, 10 Feb. 2019, unsplash.com/photos/BuqOCF7XR7k.-->
+
+
+          <!-- Your code goes in the img tag below.  Make sure to react to "hovering" and "tabbing": -->
+          <img class = "preview" tabindex = "1"
+          onmouseover = "upDate(this)"
+          onfocus = "upDate(this)"
+          onmouseleave = "unDo()"
+          onblur = "unDo()"
+          tabindex= "0"
+            src = "https://images.unsplash.com/photo-1549896869-ca27eeffe4fb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80"
+            alt = "Running tracks">
+            <!-- Yuen, Lysander. “Sport, Sports, Running Track and Rug HD Photo by Lysander Yuen (@Lysanderyuen) on Unsplash.” Beautiful Free Images & Pictures, Unsplash, 11 Feb. 2019, unsplash.com/photos/LKaN_tqplEw.-->
+
+
+            <!-- Your code goes in the img tag below.  Make sure to react to "hovering" and "tabbing": -->
+            <img class = "preview" tabindex = "1"
+            onmouseover = "upDate(this)"
+            onfocus = "upDate(this)"
+            onmouseleave = "unDo()"
+            onblur = "unDo()"
+            tabindex= "0"
+              src = "https://images.unsplash.com/photo-1508614874708-a0adf94d4c33?ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80"
+              alt = "flickering lights">
+              <!-- Bayer, Dmitry. “Light, Blur, Bokeh and Gold HD Photo by Dmitry Bayer (@Dmitrybayer) on Unsplash.” Beautiful Free Images & Pictures, Unsplash, 21 Oct. 2017, unsplash.com/photos/K1jUkRFPa2I.-->
+
+              <!-- Your code goes in the img tag below.  Make sure to react to "hovering" and "tabbing": -->
+              <img class = "preview" tabindex = "1"
+              onmouseover = "upDate(this)"
+              onfocus = "upDate(this)"
+              onmouseleave = "unDo()"
+              onblur = "unDo()"
+              tabindex= "0"
+                src = "https://images.unsplash.com/photo-1546349851-64285be8e9fa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80"
+                alt = "architecture">
+                <!-- Garcia, Victor. “Ring Photo by Victor Garcia (@victor_g) on Unsplash.” Beautiful Free Images & Pictures, Unsplash, 1 Jan. 2019, unsplash.com/photos/iaquA2snPbk. -->
+</body>
+</html>
